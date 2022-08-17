@@ -1,4 +1,4 @@
-package com.jose.crud_api;
+package com.neto.crud_api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
