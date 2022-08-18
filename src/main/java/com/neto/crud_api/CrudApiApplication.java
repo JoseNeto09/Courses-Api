@@ -14,7 +14,7 @@ public class CrudApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CrudApiApplication.class, args);
 	}
-
+/* 
 	@Bean
 	CommandLineRunner initDatabase(CourseRepository courseRepository){
 		return args ->{
@@ -28,5 +28,5 @@ public class CrudApiApplication {
             courseRepository.save(c);
 		};
 	}
-
+*/
 }
