@@ -9,5 +9,5 @@ import com.neto.crud_api.model.Course;
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
     
-
+    
 }
