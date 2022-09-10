@@ -1,6 +1,6 @@
 # Api-Angular-Spring
 
-Api desenvolvida em Java Spring, para listagem de cursos em desenvolvimento web com funcionalidades de deletar e cursos Criar novos cursos.
+Api em rest desenvolvida em Spring, para listagem de cursos em desenvolvimento web com funcionalidades de deletar e cursos Criar novos cursos.
 
 Dependências { 
   com.h2database
