@@ -20,7 +20,6 @@ import com.neto.crud_api.repository.CourseRepository;
 
 import lombok.AllArgsConstructor;
 
-
 @RestController
 @RequestMapping("/api/courses")
 @AllArgsConstructor
@@ -60,7 +59,12 @@ public class CourseController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable long id) {
-        courseRepository.deleteById(id);
+    public ResponseEntity<Void> delete(@PathVariable long id) {
+        return courseRepository.findById(id)
+             .map(recordFound -> {
+                courseRepository.deleteById(id);
+                return ResponseEntity.noContent().<Void>build();
+             })
+            .orElse(ResponseEntity.notFound().build());
     }
 }
